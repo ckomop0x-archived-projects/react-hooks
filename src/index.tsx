@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {Name, Counter, User, Form} from './components';
+import {Name, Counter, User, Form, ClicksCounter} from './components';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
   return (
     <div className="App">
       <h1>React Hooks</h1>
+      <h2>Use Memo</h2>
+      <ClicksCounter/>
+      <br/>
+      <hr/>
+      <br/>
       <h2>Use Reducer</h2>
       <Form/>
       <br/>
