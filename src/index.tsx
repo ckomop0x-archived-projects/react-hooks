@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {Name, Counter, User, Form, ClicksCounter} from './components';
+import {Name, Counter, User, Form, ClicksCounter, MouseMovement} from './components';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
@@ -26,6 +26,11 @@ const App = () => {
       {/*<Counter />*/}
       <h2>Use Context</h2>
       <User/>
+      <br/>
+      <hr/>
+      <br/>
+      <h2>Use Effect</h2>
+      <MouseMovement/>
     </div>
   );
 }
