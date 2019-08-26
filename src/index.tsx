@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Name, Counter } from './components';
+import { Name, Counter, User } from './components';
 import * as serviceWorker from './serviceWorker';
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       <h2>React Hooks</h2>
       <Name />
-      <Counter />
+      {/*<Counter />*/}
+      <User/>
     </div>
   );
 }
