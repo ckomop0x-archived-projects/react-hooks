@@ -13,7 +13,6 @@ const Name: React.FC = () => {
   const [name, changeName] = useInput('')
   const [color, changeColor] = useInput('')
 
-
   return (
     <div>
       <p>What is your name?</p>

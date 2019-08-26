@@ -4,7 +4,7 @@ import React, {useState, useContext} from 'react';
 const UserContext = React.createContext()
 
 const UserDetails = () => {
-  const { user, setUser } = useContext(UserContext)
+  const {user, setUser} = useContext(UserContext)
 
   return (
     <div>
@@ -15,7 +15,7 @@ const UserDetails = () => {
 }
 
 const Login = () => {
-  const { user, setUser } = useContext(UserContext)
+  const {user, setUser} = useContext(UserContext)
   const [loginName, setLoginName] = useState('')
 
   return (
@@ -34,10 +34,10 @@ const User = () => {
   const [user, setUser] = useState('')
 
   return (
-    <UserContext.Provider value={{ user, setUser }}>
-      {user ? <UserDetails /> : <Login />}
+    <UserContext.Provider value={{user, setUser}}>
+      {user ? <UserDetails/> : <Login/>}
     </UserContext.Provider>
-    )
+  )
 };
 
-      export default User
+export default User
