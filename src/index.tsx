@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Name from './components/Name';
 import * as serviceWorker from './serviceWorker';
+
+function App() {
+  return (
+    <div className="App">
+      <h2>React Hooks</h2>
+      <Name />
+    </div>
+  );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
